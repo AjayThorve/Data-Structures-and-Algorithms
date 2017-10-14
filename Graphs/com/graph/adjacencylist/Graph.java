@@ -2,8 +2,8 @@ package com.graph.adjacencylist;
 import java.util.LinkedList;
 
 public class Graph{
-    int V;
-    LinkedList<Integer> adjListArray[];
+    public int V;
+    public LinkedList<Integer> adjListArray[];
     
     public Graph(int V){// V is the number of vertices/nodes in the graph
       this.V = V;
@@ -17,8 +17,8 @@ public class Graph{
    public void addEdge(int src, int dest){
     this.adjListArray[src].addFirst(dest);
     
-    //since graph is undirected, add to dest as well:
-    this.adjListArray[dest].addFirst(src);
+    //if graph is undirected, add to dest as well: 
+    //this.adjListArray[dest].addFirst(src);
     
   }
   
