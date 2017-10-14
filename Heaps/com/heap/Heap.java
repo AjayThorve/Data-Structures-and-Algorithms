@@ -76,7 +76,7 @@ public abstract class Heap{
         }
     }
 
-    public int extractMin(){
+    public int extractTop(){
         isEmpty("ExtractMin");
 
         int item = items[0];
