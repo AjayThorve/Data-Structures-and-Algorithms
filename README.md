@@ -1,2 +1,2 @@
-# CTCI-solutions
-Solutions of the CTCI book in java
+# JAVA-Practice
+Including CTCI and various java data structures implementations!
