@@ -26,7 +26,7 @@ public class WebCrawler{
 
             String rawHtml = readUrl(website);
 
-            String regexp = "http://(\\w+\\.)*(\\w+)*";
+            String regexp = "http[s]*://([a-zA-Z0-9-_?=&]+\\.*/*)*";
             Pattern pattern = Pattern.compile(regexp);
 
             Matcher matcher = pattern.matcher(rawHtml);
